@@ -345,8 +345,53 @@ main, footer{
 }
 
 
+.projects-grid a, .projects-grid a:visited{
+  text-decoration: none;
+  color: #000;
+}
 
 
+
+/* ----Phonix Style */
+.phonix-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.phonix-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.phonix-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.phonix-item .info {
+  max-width: 500px;
+}
+
+.phonix-item h2{
+  margin: 0;
+}
+
+.phonix-userflow img{
+  max-width: 100%;
+}
+
+.phonix-wires img{
+  max-width: 100%;
+}
+
+.phonix-wires{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
 
   /* ---- Mobile View---- */
 
@@ -362,4 +407,3 @@ main, footer{
   }
 
 
-  
