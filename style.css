@@ -467,8 +467,62 @@ main, footer{
   margin: 0 96px;
 }
 
+.featured-projects{
+  margin: 36px 0;
+}
 
 
+.sweet-item img{
+  max-width: 100%;
+
+}
+
+.s-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.phonix-brandlogo img{
+  max-width: 100%;
+}
+img{
+  max-width: 100%;
+}
+
+.sweet-final{
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  gap:20px;
+  align-items: center;
+  text-align: center;
+  font-style: italic;
+  margin: 32px 0;
+}
+.sweet-final img{
+  width: 120px;
+}
+
+
+
+.sweetlogo-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+
+  margin: 30px;
+}
+
+.sweetlogo-container img{
+  width: 200px;
+}
+
+.compare-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
 
   /* ---- Mobile View---- */
 
@@ -499,6 +553,10 @@ main, footer{
     width: 200px;
     height: auto;
     border-radius: 5px;
+  }
+
+  .compare-container{
+    grid-template-columns: 1fr;
   }
 }
 
