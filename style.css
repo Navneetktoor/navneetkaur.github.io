@@ -67,7 +67,19 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+
+  /* Hover Animaton on Cards */
+
+  .project {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
   
+  .project:hover {
+    transform: scale(1.02) rotate(1.1deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  }
+  
+
   .project-example img {
     width: 420px;
     height: auto;
@@ -254,18 +266,6 @@ body {
     border-radius: 4px;
   }
   
-  .skills .btn:hover {
-    background-color: #0059b3;
-  }
-
-
-
-
-
-  /* -----------CSS by Erik------------ */
-
-
-/* ----DESKTOP VIEW---- */
 
 
 main, footer{
@@ -348,6 +348,9 @@ main, footer{
   font-family: 'Arial', sans-serif;
   font-style: italic;
   font-size: 14px;
+}
+.contact-form textarea{
+  font-family: Arial, sans-serif;
 }
 
 
@@ -523,6 +526,111 @@ img{
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+
+
+
+/* INTRO ANIMATION */
+
+.intro {
+  min-height: 80vh;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInSlideUp 1s ease-out forwards; 
+}
+
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.info, .intro-image {
+  animation: contentFadeIn 1.2s ease-in-out forwards;
+}
+
+@keyframes contentFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-image img {
+  transform: scale(0.9);
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.featured-projects {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.projects-grid, .about-container, .contact-container,.phonix {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: projectFadeUp 0.8s ease-in-out forwards;
+  animation-delay: calc(var(--project-index, 1) * 0.2s);
+}
+
+
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes projectFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* BUTTON HOVER EFFECT */
+
+button, .btn{
+  transition: transform 0.2s ease-in-out; 
+}
+
+button:hover, .btn:hover  {
+  background-color: #0056b3; 
+  transform: translateY(-2px) rotate(1.1deg); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+button:active {
+  transform: translateY(0); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* LINKS ANIMATION */
+
+a:hover {
+  color: #0056b3; 
+}
+
+
+a:active {
+  color: #003d80;
+  text-shadow: none; 
+  transform: scale(0.98); 
+}
+
 
   /* ---- Mobile View---- */
 
