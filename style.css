@@ -666,6 +666,24 @@ a:active {
   .compare-container{
     grid-template-columns: 1fr;
   }
+
+  /* Contact Page */
+  .contact-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .contact-form{
+    padding-left: 0%;
+  }
+  .contact-info{
+    border: 0;
+  }
+
+  /* Phonix Page*/
+  .phonix-section, .phonix-wires, .phonix-colors, .s-info{
+    grid-template-columns: 1fr;
+  }
 }
 
 
